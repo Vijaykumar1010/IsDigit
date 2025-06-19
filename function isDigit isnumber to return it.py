@@ -3,6 +3,9 @@ def isNumber(number: int):
 
     isInteger = True # set a flag
 
+    if number.startswith('-'): 
+        number = number[1:] # Remove the '-' for checking digits
+
     for eachcharacter in number:
 
         if (eachcharacter >='0' and eachcharacter <= '9'):
